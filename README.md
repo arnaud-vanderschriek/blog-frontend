@@ -57,7 +57,7 @@ L’application sera disponible sur http://localhost:5173/
   │── package.json         # Dépendances & scripts
   │── README.md            # Documentation du projet
 
----
+  ```
 
 ## ✨ Aperçu
 
