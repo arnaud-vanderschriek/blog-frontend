@@ -44,8 +44,9 @@ L’application sera disponible sur http://localhost:5173/
  (par défaut avec Vite).
 
 ---
-## Structure du projet
 
+## Structure du projet
+  ```
   mon-blog/
   │── public/              # Fichiers statiques
   │── src/
