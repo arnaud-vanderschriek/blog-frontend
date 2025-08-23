@@ -1,12 +1,31 @@
-# React + Vite
+# 🌐 Mon Blog en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur **Mon Blog**, une application développée avec **React.js**.  
+Ce projet a pour objectif de partager des articles, des idées et des réflexions, tout en proposant une interface moderne et intuitive.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+- 📝 Page d’accueil avec présentation du projet  
+- 🔐 Formulaire de connexion (username + password)  
+- 📱 Design responsive (adapté mobiles, tablettes, desktops)  
+- 🎨 Interface moderne et épurée grâce à React et CSS  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies utilisées
+
+- [React.js](https://reactjs.org/) – Librairie principale  
+- [Vite](https://vitejs.dev/) – Outil de build rapide (optionnel si tu l’utilises)  
+- [Tailwind CSS](https://tailwindcss.com/) ou CSS classique – Pour le style  
+- [React Router](https://reactrouter.com/) – Pour la navigation entre les pages (si prévu)  
+
+---
+
+## 📦 Installation & Lancement
+
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/ton-profil/mon-blog.git
+   cd mon-blog
