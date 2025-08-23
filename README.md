@@ -29,3 +29,53 @@ Ce projet a pour objectif de partager des articles, des idées et des réflexion
    ```bash
    git clone https://github.com/ton-profil/mon-blog.git
    cd mon-blog
+   
+2. **Installer les dépendances**
+  ```bash
+  npm install
+
+
+3. **Lancer l’application**
+  ```
+  npm run dev
+
+
+L’application sera disponible sur http://localhost:5173/
+ (par défaut avec Vite).
+
+
+4. **Structure du projet**
+
+  mon-blog/
+  │── public/              # Fichiers statiques
+  │── src/
+  │   ├── components/      # Composants réutilisables
+  │   ├── pages/           # Pages principales (Home, Login, etc.)
+  │   ├── App.jsx          # Point d’entrée principal
+  │   ├── main.jsx         # Initialisation React
+  │── package.json         # Dépendances & scripts
+  │── README.md            # Documentation du projet
+
+5. **✨ Aperçu**
+
+  Page d’accueil (Home)
+
+  Présentation du projet
+
+  Section expliquant l’objectif du blog
+
+  Formulaire de connexion
+
+  Nom d’utilisateur + mot de passe
+
+  Bouton Se connecter
+
+6. **🤝 Contribution**
+
+  Les contributions sont les bienvenues !
+  N’hésite pas à forker le projet, créer une branche, puis ouvrir une pull request.
+
+7. **📜 Licence**
+
+  Ce projet est sous licence MIT.
+  Tu es libre de l’utiliser, le modifier et le partager.
