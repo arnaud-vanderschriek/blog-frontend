@@ -34,12 +34,12 @@ This project aims to share articles, ideas, and thoughts while providing a moder
 2. **Install dependencies**
   ```
   npm install
-
+  ```
 
 3. **Run the application**
   ```
   npm run dev
-
+  ```
 
 The app will be available at http://localhost:5173/
  (default with Vite).
