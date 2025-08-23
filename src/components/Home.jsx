@@ -1,29 +1,21 @@
 const Home = () => {
   return (
     <div className="mt-20">
-      <h1>Welcome on Blog Space</h1>
-      <p>Découvrez l’essence de mon projet et suivez son évolution.</p>
+      <h1 class="text-4xl mt-4 font-black text-center">Welcome on Blog Space</h1>
+      <div className="flex justify-center mt-10 w-full">
+        <img  src="blogger-logo-icon.png" alt="" width="200px" height="200px"/>
+      </div>
+      <p className="mt-20 ml-4">Discover the essence of my project and follow its evolution.</p>
 
-    <div class="about">
-      <h2>À propos du projet</h2>
-      <p>
-        Ce blog est un espace dédié au partage d’idées, de découvertes et de réflexions. 
-        Vous y trouverez des articles variés, des tutoriels, ainsi que des mises à jour régulières 
-        sur le projet en cours. L’objectif est de créer une communauté autour de la connaissance 
-        et de l’entraide.
-      </p>
+      <div class="about">
+        <h2 class="text-2xl mt-10 ml-4 font-black">About project.</h2>
+        <p className="ml-4 mt-4">
+          This blog is a space dedicated to sharing ideas, discoveries, and reflections.
+          You will find a variety of articles, tutorials, as well as regular updates on the ongoing project.
+          The goal is to create a community built around knowledge and mutual support.
+        </p>
+      </div>
     </div>
-
-    <div class="login-form">
-      <h2>Connexion</h2>
-      <form>
-        <input type="text" placeholder="Nom d'utilisateur" required />
-        <input type="password" placeholder="Mot de passe" required />
-        <button type="submit">Se connecter</button>
-      </form>
-  </div>
-    </div>
- 
   )
 }
 

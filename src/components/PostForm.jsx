@@ -28,7 +28,7 @@ const submit = async (e) => {
     }
   }; return (
     <div class="flex flex-col fixed top-20 left-0 right-0">
-      <h1 class="text-4xl mt-4 font-black text-center">Send your post.</h1>
+      <h1 class="text-4xl font-black text-center">Send your post.</h1>
       <form action="POST" onSubmit={submit} class="flex flex-col m-4 p-4 shadow-lg" >
         <label class="mt-4 ml-4">Title:</label>
         <input class="shadow-xl mt-4 ml-4 mr-4 p-2 h-10 border-1" type="text" onChange={(e) => change(e.target.value, "title") } />

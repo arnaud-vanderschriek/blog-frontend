@@ -3,6 +3,8 @@
 Welcome to **My Blog**, an application built with **React.js**.  
 This project aims to share articles, ideas, and thoughts while providing a modern and intuitive interface.
 
+![Texte alternatif](![Texte alternatif](public/Capture%20d’écran%20du%202025-08-23%2016-00-32.png))
+
 ---
 
 ## 🚀 Features
