@@ -43,8 +43,8 @@ Ce projet a pour objectif de partager des articles, des idées et des réflexion
 L’application sera disponible sur http://localhost:5173/
  (par défaut avec Vite).
 
-
-4. **Structure du projet**
+---
+## Structure du projet
 
   mon-blog/
   │── public/              # Fichiers statiques
@@ -56,7 +56,9 @@ L’application sera disponible sur http://localhost:5173/
   │── package.json         # Dépendances & scripts
   │── README.md            # Documentation du projet
 
-5. **✨ Aperçu**
+---
+
+## ✨ Aperçu
 
   Page d’accueil (Home)
 
@@ -70,12 +72,16 @@ L’application sera disponible sur http://localhost:5173/
 
   Bouton Se connecter
 
-6. **🤝 Contribution**
+---
+
+## 🤝 Contribution
 
   Les contributions sont les bienvenues !
   N’hésite pas à forker le projet, créer une branche, puis ouvrir une pull request.
 
-7. **📜 Licence**
+---
+
+## 📜 Licence
 
   Ce projet est sous licence MIT.
   Tu es libre de l’utiliser, le modifier et le partager.
