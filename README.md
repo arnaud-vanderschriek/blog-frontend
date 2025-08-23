@@ -29,7 +29,7 @@ This project aims to share articles, ideas, and thoughts while providing a moder
   ```
   git clone https://github.com/your-username/my-blog.git
   cd my-blog
-   
+
 2. **Install dependencies**
   ```
   npm install
