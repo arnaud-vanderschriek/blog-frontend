@@ -14,18 +14,18 @@ export default function PostList() {
   }
 
   return (
-    <div class="flex flex-col items-center mt-20">
-      <h1 class="text-4xl mt-4 font-black">All posts</h1>
+    <div className="flex flex-col items-center mt-20">
+      <h1 className="text-4xl mt-4 font-black">All posts</h1>
       <ul>
         {posts.map((p) => (
-          <li class="mt-10" key={p.id}>
-            <div class="flex">
-              <p class="text-gray-400 m-4">by: {p.author}</p>
-              <p class="text-gray-400 m-4">date: {p.createdAt}</p>
+          <li className="mt-10" key={p.id}>
+            <div className="flex">
+              <p className="text-gray-400 m-4">by: {p.author}</p>
+              <p className="text-gray-400 m-4">date: {p.createdAt}</p>
             </div>
-            <p class="bg-black text-white ml-4 h-10 flex justify-center items-center rounded-lg "><strong>{p.title}</strong></p>
-            <div class="w-200 h-100 flex flex-col items-center shadow-lg">
-              <div class="h-full m-4">
+            <p className="bg-black text-white ml-4 h-10 flex justify-center items-center rounded-lg "><strong>{p.title}</strong></p>
+            <div className="w-200 h-100 flex flex-col items-center shadow-lg">
+              <div className="h-full m-4">
                 <p>{p.content}</p>
               </div>
             </div>

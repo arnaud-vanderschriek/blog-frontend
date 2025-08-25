@@ -22,12 +22,12 @@ export default function PostEdit() {
 
   return (
     <div className="mt-20 flex flex-col justify-center items-center">
-      <h1 class="text-4xl mt-4 font-black text-center">Edit posts</h1>
+      <h1 className="text-4xl mt-4 font-black text-center">Edit posts</h1>
       {posts.map((elem ) => (
         <div key={elem._id} class="w-200 h-100 flex mt-10 flex-col items-center shadow-lg">
           <p>{elem.title}</p>
           <p>{elem.content}</p>
-          <button class="bg-black text-white rounded-lg p-2 mb-2 hover:bg-gray-500 w-50" onClick={() => handleDelete(elem._id)}>Supprimer</button>
+          <button className="bg-black text-white rounded-lg p-2 mb-2 hover:bg-gray-500 w-50" onClick={() => handleDelete(elem._id)}>Supprimer</button>
         </div>
       ))}
     </div>

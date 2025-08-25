@@ -1,24 +1,38 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import PostList from "./components/PostList";
-import PostForm from "./components/PostForm";
-import PostDetail from "./components/PostDetail";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import PostList from "./components/PostList";
+import PostForm from "./components/PostForm";
 import PostEdit from "./components/PostEdit";
+import PostDetail from "./components/PostDetail";
 import Login from "./components/Login";
+import ProtectedRoute from "./components/ProtectedRoutes";
+
+function AppContent() {
+  const location = useLocation();
+  const token = localStorage.getItem("token");
+
+  const showNavbar = token && location.pathname !== "/";
+
+  return (
+    <>
+      {showNavbar && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path="/posts" element={<ProtectedRoute><PostList /></ProtectedRoute>} />
+        <Route path="/new" element={<ProtectedRoute><PostForm /></ProtectedRoute>} />
+        <Route path="/edit" element={<ProtectedRoute><PostEdit /></ProtectedRoute>} />
+        <Route path="/post/:id" element={<ProtectedRoute><PostDetail /></ProtectedRoute>} />
+      </Routes>
+    </>
+  );
+}
 
 function App() {
   return (
     <BrowserRouter>
-    <Navbar />
-      <Routes>
-        <Route path="/" element={<Login/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/posts" element={<PostList />} />
-        <Route path="/new" element={<PostForm />} />
-        <Route path="/edit" element={<PostEdit />} />
-        <Route path="/post/:id" element={<PostDetail />} />
-      </Routes>
+      <AppContent />
     </BrowserRouter>
   );
 }

@@ -4,10 +4,10 @@ import { getPosts, deletePost } from "../services/api";
 export default function PostDetail() {
   const [posts, setPosts] = useState([]);
 
-
   useEffect(() => {
     loadPosts();
   });
+
   async function handleDelete(id) {
     await deletePost(id);
     loadPosts(); 
@@ -21,16 +21,15 @@ export default function PostDetail() {
   return (
     <div>
       <h1>Details</h1>
-     <div class="w-200 h-100 flex flex-col items-center shadow-lg">
-      {posts.map((elem ) => {
-        <p>{elem.titre}</p>  
-      })}
-        <div class="h-full m-4">
-            <p></p>
+      <div className="w-200 h-100 flex flex-col items-center shadow-lg">
+        {posts.map((elem ) => {
+          <p>{elem.titre}</p>  
+        })}
+        <div className="h-full m-4">
+          <p></p>
         </div>
       </div>
-      <button class="bg-black text-white rounded-lg p-2 mb-2 hover:bg-gray-500 w-50" onClick={() => handleDelete(posts.id)}>Supprimer</button>
-
+      <button className="bg-black text-white rounded-lg p-2 mb-2 hover:bg-gray-500 w-50" onClick={() => handleDelete(posts.id)}>Supprimer</button>
     </div>
   );
 }
