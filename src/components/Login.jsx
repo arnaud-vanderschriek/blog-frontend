@@ -49,7 +49,7 @@ const Login = () => {
   }
   return (
     <div className="mt-20 flex flex-col items-center">
-      <h1 className="text-4xl mt-4 font-black text-center">Login Page</h1>
+      <h1 className="text-4xl mt-4 font-black text-center">Blog Space</h1>
       <img src="blogger-logo-icon.png" className="w-40 mt-2" alt="logo" />
   
       <form 
