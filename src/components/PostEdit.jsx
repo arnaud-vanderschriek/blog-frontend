@@ -4,18 +4,16 @@ import { getPosts, deletePost } from "../services/api";
 export default function PostEdit() {
   const [posts, setPosts] = useState([]);
 
-
   useEffect(() => {
     loadPosts();
   }, []);
 
   async function handleDelete(id) {
-    console.log("ID in PostEdit: ", id)
     await deletePost(id);
     loadPosts(); 
   }
 
- async function loadPosts() {
+  async function loadPosts() {
     const data = await getPosts();
     setPosts(data);
   }

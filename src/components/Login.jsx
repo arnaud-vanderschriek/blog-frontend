@@ -25,7 +25,6 @@ const Login = () => {
 
     try {
       const res = await getConnected(value);  
-
       if (!res.success) {
         setError(res.message); 
         if (res.errors) {
@@ -38,7 +37,7 @@ const Login = () => {
         return;
       }
 
-      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("token", res.data);
       navigate("/home");
     } catch (err) {
       if(err) {
