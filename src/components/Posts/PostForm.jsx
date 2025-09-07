@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { createPost } from "../services/api";
+import { createPost } from "../../services/api";
 
 export default function PostForm() {
  const [value, setValue] = useState({
@@ -26,7 +26,9 @@ const submit = async (e) => {
       console.error(err);
       alert("Erreur lors de la création de l'article");
     }
-  }; return (
+  };
+  
+  return (
     <div className="flex flex-col fixed top-20 left-0 right-0">
       <h1 className="text-4xl font-black text-center">Send your post.</h1>
       <form action="POST" onSubmit={submit} className="flex flex-col m-4 p-4 shadow-lg" >
